@@ -1,4 +1,4 @@
-package org.kindofdev.zionomicon.chap2
+package org.kindofdev.zionomicon.chap02
 
 import scala.annotation.tailrec
 

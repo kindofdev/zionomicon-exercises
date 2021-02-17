@@ -1,4 +1,4 @@
-package org.kindofdev.zionomicon.chap2
+package org.kindofdev.zionomicon.chap02
 
 /**
  * Using the Console, write a little program that asks the user what their

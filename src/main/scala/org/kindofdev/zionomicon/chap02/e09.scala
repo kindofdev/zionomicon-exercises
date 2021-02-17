@@ -1,4 +1,4 @@
-package org.kindofdev.zionomicon.chap2
+package org.kindofdev.zionomicon.chap02
 
 /**
  * Implement the orElse function in terms of the toy model of a ZIO effect.

@@ -1,25 +1,24 @@
-package org.kindofdev.zionomicon.chap2
+package org.kindofdev.zionomicon.chap02
 
 import zio.ZIO
 
 /**
  * Using ZIO.effectAsync, convert the following asynchronous, callback-based function into a ZIO function
  */
-object e15 {
-  trait User
+object e14 {
 
-  def saveUserRecord(
-      user: User,
-      onSuccess: () => Unit,
+  def getCacheValue(
+      key: String,
+      onSuccess: String => Unit,
       onFailure: Throwable => Unit
   ): Unit =
     ???
 
-  def saveUserRecordZio(user: User): ZIO[Any, Throwable, Unit] =
+  def getCacheValueZio(key: String): ZIO[Any, Throwable, String] =
     ZIO.effectAsync { register =>
-      saveUserRecord(
-        user,
-        () => register(ZIO.succeed(())),
+      getCacheValue(
+        key,
+        value => register(ZIO.succeed(value)),
         throwable => register(ZIO.fail(throwable))
       )
     }

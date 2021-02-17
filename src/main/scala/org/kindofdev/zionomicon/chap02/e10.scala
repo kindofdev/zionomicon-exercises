@@ -1,4 +1,4 @@
-package org.kindofdev.zionomicon.chap2
+package org.kindofdev.zionomicon.chap02
 
 /**
  * Using the following code as a foundation, write a ZIO application that
